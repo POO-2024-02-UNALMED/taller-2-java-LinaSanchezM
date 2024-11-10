@@ -1,7 +1,7 @@
 package test;
 
 public class Asiento {
-    private String[] colors = {"rojo", "verde", "azul", "amarillo", "negro", "blanco"};
+    static String[] colors = {"rojo", "verde", "azul", "amarillo", "negro", "blanco"};
     String color;
     int precio;
     int registro;
