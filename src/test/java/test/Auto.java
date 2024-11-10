@@ -11,11 +11,11 @@ public class Auto {
 
 
 
-    int cantidadAsientos(int Asiento){
+    int cantidadAsientos(){
         int contadorasientos = 0;
         for (Asiento i : this.asientos) {
             if (i instanceof Asiento) {
-                contadorasientos++;
+                ++contadorasientos;
             }
         }
         return contadorasientos;
@@ -23,18 +23,18 @@ public class Auto {
 
 
 
-    String verificarIntegridad(String motor){
+    String verificarIntegridad(){
         for (Asiento i : this.asientos) {
             if (i instanceof Asiento) {
                     if (i.registro != this.motor.registro) {
                        return "Las piezas no son originales";
-            }else if(i.registro != this.registro) {
+                    }else if(i.registro != this.registro) {
                        return "Las piezas no son originales";
-            }else if(i.registro != this.motor.registro) {
+                    }else if(i.registro != this.motor.registro) {
                        return "Las piezas no son originales";
-            } 
-       }
-    }
+                    } 
+            }
+        }
     return "Auto original";
-}
+   }
 }
