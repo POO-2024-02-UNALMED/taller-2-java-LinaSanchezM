@@ -7,10 +7,11 @@ public class Asiento {
     int registro;
 
     void cambiarColor(String color){
-        if ("rojo".equals(color) || "verde".equals(color) || 
-            "amarillo".equals(color) || "negro".equals(color) || 
-            "blanco".equals(color)) {
-            
+        for (String i : colors) {
+            if(i.equals(color)){
+                this.color= color;
+                break;
+            }
             this.color = color;
         }    
     }
