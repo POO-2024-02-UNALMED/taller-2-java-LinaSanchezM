@@ -7,6 +7,7 @@ public class Asiento {
     int precio;
     int registro;
 
+    
     void cambiarColor(String color){
         for (String i : coloresPermitidos) {
             if(i.equals(color)){
